@@ -74,9 +74,4 @@ void loop() {
   rechtsSpeed = constrain(rechtsSpeed,0, (int16_t)maxSnelheid);
 
   motors.setSpeeds(linksSpeed, rechtsSpeed);
-
-
-  // Serial.print(error);
-
-
 }
