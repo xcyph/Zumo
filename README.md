@@ -23,7 +23,7 @@ To access all features of this library, you just need these include statements:
 #include <Wire.h>
 #include <Zumo32U4.h>
 ```
-#Xbee gebruiken
+# Xbee gebruiken
 Als je nu de Xbee hebt ingesteld, en je hebt je Zumo aan een USB kabel hangen, dan heb je twee manieren om te communiceren tussen je lap-top en je Zumo. (Namelijk via de USB kabel en via de Xbee)
 
 Let op, het uploaden van je programma-code naar de ZUMO lukt enkel met de USB kabel!!! De Xbee is hier dus niet bruikbaar voor.
