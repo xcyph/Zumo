@@ -8,4 +8,6 @@ class LijnDet
  public:
     int kleurHerkenning();
     void starter();
+    void calibreren();
+    void zelfRijden();
  };
