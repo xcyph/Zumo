@@ -14,7 +14,9 @@ class motoren : public Zumo32U4Motors
         void rechtsomDraaien(int);
         void linksomDraaien(int);
         void stop();
+        void printSnelheid();
 
     private:
-        int snelheid;
+        int snelheidL;
+        int snelheidR;
 };

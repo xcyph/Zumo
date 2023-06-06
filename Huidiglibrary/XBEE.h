@@ -6,7 +6,7 @@ using namespace std;
 class XBEE
 {
     public:
-        XBEE();
+        XBEE(int);
         ~XBEE();
         void setBaudrate(int);
         bool available();
@@ -14,5 +14,4 @@ class XBEE
 
     private:
         int baudrate;
-        char instruction;
 };
