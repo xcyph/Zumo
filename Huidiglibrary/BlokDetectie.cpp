@@ -1,23 +1,23 @@
 #include <BlokDetectie.h>
-Zumo32U4Motors motors; 
-Zumo32U4ProximitySensors prox;
-BlokDetectie :: BlokDetectie (): leftValue(0), rightValue(0), gevonden(false)
+Zumo32U4Motors motors;                                                          //het object motors wordt gemaakt
+Zumo32U4ProximitySensors prox;                                                  //het object prox wordt gemaakt
+BlokDetectie :: BlokDetectie (): leftValue(0), rightValue(0), gevonden(false)   //constructor van blokdetectie
 { 
 
 }
 
-BlokDetectie :: ~BlokDetectie() 
+BlokDetectie :: ~BlokDetectie()                                                 //destructor van blokdetectie
 {
 
 }
 
 
-void BlokDetectie :: init() {
+void BlokDetectie :: init() {                                                   //hier wordt de proximitysensor geinitialiseerd                                            
 prox.initFrontSensor();
 
 }
 
-void BlokDetectie :: read()
+void BlokDetectie :: read()                                                    //hier worden de waardes vanuit de linker en rechter gelezen
 {
   prox.read();
   leftValue = prox.countsFrontWithLeftLeds();
@@ -25,7 +25,7 @@ void BlokDetectie :: read()
 
 }
 
-void BlokDetectie :: rijden(){
+void BlokDetectie :: rijden(){                                                  //deze methode wordt weg gegooit 
    
 
     if (gevonden == false) 
@@ -34,7 +34,7 @@ void BlokDetectie :: rijden(){
 }
     if ( (leftValue + rightValue) >= 9 )
 {
-    evonden = true; 
+    gevonden = true; 
     motors.setSpeeds(200,200);
 
 
