@@ -12,7 +12,6 @@ public:
   void SensCali();
   void shRead();
 private:
-
 };
 
 #endif
