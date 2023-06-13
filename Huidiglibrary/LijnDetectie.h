@@ -1,23 +1,18 @@
-#ifndef ZUMO_H
-#define ZUMO_H
+#ifndef LijnHerkenning_H
+#define LijnHerkenning_H
 
 #include <Zumo32U4.h>
 #include <Wire.h>
 
-class Zumo {
+class LijnHerkenning {
 public:
-  Zumo();
-  void setup();
-  void loop();
-  void kleurHerkenning();
-  
-private:
-  Zumo32U4ButtonA buttonA;
-  Zumo32U4LineSensors lijnSensor;
-  Zumo32U4Motors motors;
-
+  LijnHerkenning();
+  void calibratie();
+  void volgen();
   void SensCali();
   void shRead();
+private:
+
 };
 
 #endif
