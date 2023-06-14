@@ -22,4 +22,5 @@ class Balanceren : public Zumo32U4IMU
     float GyroAngle;
     float AccelAngle;
     float Gyro_OffsetY;
+    Zumo32U4IMU ZumoIMU;
 };

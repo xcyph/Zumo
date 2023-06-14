@@ -1,7 +1,5 @@
 #include <Gyro.h>
 
-Zumo32U4IMU ZumoIMU;
-
 /*De constructor van de klasse Balanceren. Deze krijgt de 3 private variabelen
 mee die allemaal geinitialiseerd worden met de waarde 0.*/
 Balanceren::Balanceren():GyroAngle(0), AccelAngle(0), Gyro_OffsetY(0){
