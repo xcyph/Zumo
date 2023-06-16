@@ -13,6 +13,7 @@ class KleurHerkenning {
     bool grijs();
   private:
     int gem;
+    LijnHerkenning LijnHer;
 
 };
 
