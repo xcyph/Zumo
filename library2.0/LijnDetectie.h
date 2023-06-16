@@ -12,7 +12,9 @@ public:
   void SensCali();
   void shRead();
 private:
-
+  ButtonA buttonA;
+  Zumo32U4LineSensors lijnSensor;
+  motoren motorslijn;
 };
 
 #endif
