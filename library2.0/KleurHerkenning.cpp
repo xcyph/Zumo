@@ -3,8 +3,8 @@
 #define NUM_SENSORS 5
 uint16_t drieSensors[NUM_SENSORS];
 
-int groenWaarde = 0;
-int bruinWaarde = 0;
+int groenWaarde = 170;
+int bruinWaarde = 460;
 
 int range = 70;
 
