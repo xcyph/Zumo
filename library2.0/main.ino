@@ -1,15 +1,9 @@
 #include "Besturing.h"
-
 #include "BlokDetectie.h"
-
 #include "Buttons.h"
-
 #include "Gyro.h"
-
 #include "LijnDetectie.h"
-
 #include "XBEE.h"
-
 #include "KleurHerkenning.h"
 
 LijnHerkenning lijn;
