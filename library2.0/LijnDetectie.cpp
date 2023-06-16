@@ -1,6 +1,5 @@
 #include "LijnDetectie.h"
-#include "motoren.h"
-#include "Buttons.h"
+
 #define NUM_SENSORS 5
 uint16_t lineSensorValues[NUM_SENSORS];
 
