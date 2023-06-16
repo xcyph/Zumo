@@ -19,4 +19,5 @@ class motoren : public Zumo32U4Motors
     private:
         int snelheidL;
         int snelheidR;
+        Zumo32U4Motors ZumoMotor;
 };
