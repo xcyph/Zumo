@@ -1,5 +1,5 @@
 # Zumo
- Project Systems Engineering
+ Project Systems Engineering groep 3.3
 ------------------------------
 1. Install Arduino van arduino.cc
 2. Installeer Zumo drivers van https://www.pololu.com/docs/0J63/all#5.1  tot aan blink maar doe ook stap 6 (Zumo 32U4 Arduino library)
