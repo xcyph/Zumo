@@ -1,33 +1,35 @@
 #include <Buttons.h>
 
-
-
-bool ButtonA :: isPressed() //methode van knop A
-    {
-        /*deze methode zorgt er voor dat je de knop A kan indrukken en dat hij niet debounced
-        dit geldt ook voor de andere methodes */
-
-        USBPause usbPause; //dit object zorgt er voor dat alle usb onderbrekingen uit wordt gezet
-        FastGPIO::PinLoan<ZUMO_32U4_BUTTON_A> loan; 
-        FastGPIO::Pin<ZUMO_32U4_BUTTON_A>::setInputPulledUp();
-        _delay_us(3);
-        return !FastGPIO::Pin<ZUMO_32U4_BUTTON_A>::isInputHigh();
-    }
-bool ButtonB :: isPressed() //methode van knop B
+// Klasse voor knop A
+bool ButtonA::isPressed()
 {
-        USBPause usbPause;
-        FastGPIO::PinLoan<ZUMO_32U4_BUTTON_B> loan;
-        FastGPIO::Pin<ZUMO_32U4_BUTTON_B>::setInputPulledUp();
-        _delay_us(3);
-        return !FastGPIO::Pin<ZUMO_32U4_BUTTON_B>::isInputHigh();
-    }
+    /*
+    Deze methode zorgt ervoor dat je de knop A kunt indrukken zonder debounce.
+    Dit geldt ook voor de andere methoden.
+    */
+    USBPause usbPause; // Dit object zorgt ervoor dat alle USB-onderbrekingen worden uitgeschakeld
+    FastGPIO::PinLoan<ZUMO_32U4_BUTTON_A> loan;
+    FastGPIO::Pin<ZUMO_32U4_BUTTON_A>::setInputPulledUp();
+    _delay_us(3);
+    return !FastGPIO::Pin<ZUMO_32U4_BUTTON_A>::isInputHigh();
+}
 
-
-bool ButtonC :: isPressed() //methode van knop C
+// Klasse voor knop B
+bool ButtonB::isPressed()
 {
-        USBPause usbPause;
-        FastGPIO::PinLoan<ZUMO_32U4_BUTTON_C> loan;
-        FastGPIO::Pin<ZUMO_32U4_BUTTON_C>::setInputPulledUp();
-        _delay_us(3);
-        return !FastGPIO::Pin<ZUMO_32U4_BUTTON_C>::isInputHigh();
-    }
+    USBPause usbPause;
+    FastGPIO::PinLoan<ZUMO_32U4_BUTTON_B> loan;
+    FastGPIO::Pin<ZUMO_32U4_BUTTON_B>::setInputPulledUp();
+    _delay_us(3);
+    return !FastGPIO::Pin<ZUMO_32U4_BUTTON_B>::isInputHigh();
+}
+
+// Klasse voor knop C
+bool ButtonC::isPressed()
+{
+    USBPause usbPause;
+    FastGPIO::PinLoan<ZUMO_32U4_BUTTON_C> loan;
+    FastGPIO::Pin<ZUMO_32U4_BUTTON_C>::setInputPulledUp();
+    _delay_us(3);
+    return !FastGPIO::Pin<ZUMO_32U4_BUTTON_C>::isInputHigh();
+}
