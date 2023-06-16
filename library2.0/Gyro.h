@@ -11,7 +11,7 @@ class Balanceren : public Zumo32U4IMU
     void printAngles();
     void updateGyroAngle();
     void correctWithAccelAngle();
-    bool testAngle(int);
+    bool testAngle(int, int);
     template <typename Ta, typename Tb> float vector_dot(const Zumo32U4IMU::vector<Ta> *a, const Zumo32U4IMU::vector<Tb> *b)
     {
         return (a->x * b->x) + (a->y * b->y) + (a->z * b->z);
