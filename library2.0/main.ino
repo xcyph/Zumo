@@ -1,7 +1,7 @@
 #include "motoren.h"
 #include "BlokDetectie.h"
 #include "Buttons.h"
-#include "Gyro.h"
+#include "Balanceren.h"
 #include "LijnDetectie.h"
 #include "XBEE.h"
 #include "KleurHerkenning.h"
