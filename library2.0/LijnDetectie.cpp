@@ -4,10 +4,6 @@
 #define NUM_SENSORS 5
 uint16_t lineSensorValues[NUM_SENSORS];
 
-ButtonA buttonA;
-Zumo32U4LineSensors lijnSensor;
-motoren motorslijn;
-
 const uint16_t maxSnelheid = 300;
 int16_t laatsteError = 0;
 
