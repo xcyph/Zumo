@@ -3,6 +3,8 @@
 
 #include <Zumo32U4.h>
 #include <Wire.h>
+#include "motoren.h"
+#include "Buttons.h"
 
 class LijnHerkenning {
 public:
