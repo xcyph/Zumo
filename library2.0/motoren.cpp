@@ -1,4 +1,4 @@
-#include "Besturing.h"
+#include "motoren.h"
 
 /*De constructor van de klasse motoren. Deze krijgt 2 private variabelen
 mee die allebei geinitialiseerd worden met de waarde 0.*/
