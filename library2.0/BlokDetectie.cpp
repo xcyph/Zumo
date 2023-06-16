@@ -22,10 +22,6 @@ void BlokDetectie :: read()                                                     
   prox.read();
   leftValue = prox.countsFrontWithLeftLeds();
   rightValue = prox.countsFrontWithRightLeds();
-  Serial1.print(leftValue);
-  Serial1.print("\t");
-  Serial1.println(rightValue);
-
 }
 
 void BlokDetectie :: rijden(){                                                  //deze methode wordt weg gegooit 
