@@ -2,6 +2,7 @@
 
 #include <Wire.h>
 #include <Zumo32U4.h>
+#include "motoren.h"
 
 //deze code zorgt er voor dat de Zumo het blokje vindt en deze uit de cirkel duwt
 using namespace std;
