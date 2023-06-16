@@ -15,7 +15,7 @@ BlokDetectie();                 //constructor klasse BlokDetectie
 ~BlokDetectie();                //destructor klasse BlokDetectie 
 void init();                    //initializeren van de proximity sensor
 void read();                    //het lezen van de waardes vanuit de proximitysensors
-void rijden();                  //wordt er nog uit gegooid 
+void rijden();                  //deze zorgt er voor dat de zumo het blokje volgt
 
 private: 
 uint8_t leftValue;              //wanneer de sensor iets ziet op links, dan gaat deze waarde omhoog
