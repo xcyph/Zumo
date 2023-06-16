@@ -1,7 +1,5 @@
 #include "Besturing.h"
 
-Zumo32U4Motors ZumoMotor;
-
 /*De constructor van de klasse motoren. Deze krijgt 2 private variabelen
 mee die allebei geinitialiseerd worden met de waarde 0.*/
 motoren::motoren():snelheidL(0), snelheidR(0) {
