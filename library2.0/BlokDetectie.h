@@ -6,7 +6,7 @@
 //deze code zorgt er voor dat de Zumo het blokje vindt en deze uit de cirkel duwt
 using namespace std;
 
-class BlokDetectie : public Zumo32U4ProximitySensors 
+class BlokDetectie
 { 
 public: 
 
