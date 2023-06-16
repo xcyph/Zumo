@@ -4,7 +4,7 @@
 #define NUM_SENSORS 5
 uint16_t drieSensors[NUM_SENSORS];
 
-LijnHerkenning lijnkl;
+LijnHerkenning LijnHer;
 
 int groenWaarde = 0;
 int bruinWaarde = 0;
@@ -23,7 +23,7 @@ void KleurHerkenning::leesWaardes() {
 }
 
 bool KleurHerkenning::groen() {
-  lijnkl.shRead();
+  LijnHer.shRead();
   if ((gem < (groenWaarde + range)) && (gem > (groenWaarde - range))) { // groen
     Serial.println("groen");
     return true;
@@ -33,7 +33,7 @@ bool KleurHerkenning::groen() {
   }
 }
 bool KleurHerkenning::grijs() {
-  lijnkl.shRead();
+  LijnHer.shRead();
   if ((gem < (groenWaarde + range)) && (gem > (groenWaarde - range))) { // grijs
     Serial.println("grijs");
     return true;
@@ -44,7 +44,7 @@ bool KleurHerkenning::grijs() {
 }
 
 bool KleurHerkenning::bruin() {
-  lijnkl.shRead();
+  LijnHer.shRead();
   if ((gem < (bruinWaarde + range)) && (gem > (bruinWaarde - range))) { // groen
     Serial.println("bruin");
     return true;
