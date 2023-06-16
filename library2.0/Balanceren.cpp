@@ -1,4 +1,4 @@
-#include <Gyro.h>
+#include <Balanceren.h>
 
 /*De constructor van de klasse Balanceren. Deze krijgt de 3 private variabelen
 mee die allemaal geinitialiseerd worden met de waarde 0.*/
