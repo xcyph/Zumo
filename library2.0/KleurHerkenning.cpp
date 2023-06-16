@@ -1,5 +1,4 @@
 #include "KleurHerkenning.h"
-#include "LijnDetectie.h"
 
 #define NUM_SENSORS 5
 uint16_t drieSensors[NUM_SENSORS];
