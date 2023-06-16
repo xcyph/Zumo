@@ -66,8 +66,8 @@ void Balanceren::correctWithAccelAngle() {
     weight /= 10;
     GyroAngle = weight * AccelAngle + (1 - weight) * GyroAngle;
 }
-/*In deze functie wordt getest of de huidige hoek tussen de meegegeven waarde
-en de meegegeven waarde + 40 ligt. Hier komt een true of een false uit.*/
+/*In deze functie wordt getest of de huidige hoek tussen de meegegeven waardes 
+ligt. Hier komt een true of een false uit.*/
 bool Balanceren::testAngle(int x, int y) {
     if (GyroAngle >= x && GyroAngle <= y) {
         return true;
