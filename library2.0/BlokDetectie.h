@@ -1,29 +1,25 @@
- #pragma once
+#pragma once
 
 #include <Wire.h>
 #include <Zumo32U4.h>
 #include "motoren.h"
 
-//deze code zorgt er voor dat de Zumo het blokje vindt en deze uit de cirkel duwt
+// Deze code zorgt ervoor dat de Zumo het blokje vindt en deze uit de cirkel duwt
 using namespace std;
 
 class BlokDetectie
 { 
 public: 
-
-BlokDetectie();                 //constructor klasse BlokDetectie
-~BlokDetectie();                //destructor klasse BlokDetectie 
-void init();                    //initializeren van de proximity sensor
-void read();                    //het lezen van de waardes vanuit de proximitysensors
-void rijden();                  //deze zorgt er voor dat de zumo het blokje volgt
+    BlokDetectie();             // Constructor van de klasse BlokDetectie
+    ~BlokDetectie();            // Destructor van de klasse BlokDetectie 
+    void init();                // Initialiseert de proximity sensor
+    void read();                // Leest de waardes vanuit de proximitysensoren
+    void rijden();              // Zorgt ervoor dat de Zumo het blokje volgt
 
 private: 
-uint8_t leftValue;              //wanneer de sensor iets ziet op links, dan gaat deze waarde omhoog
-uint8_t rightValue;             //wanneer de sensor iets ziet op rechts, dan gaat deze waarde omhoog
-bool gevonden;                  //wanneer de sensor iets gevonden heb dan gaat "gevonden" op true
-motoren motorsblok;             //het object motors wordt gemaakt
-Zumo32U4ProximitySensors prox;  //het object prox wordt gemaakt
-
-
-
+    uint8_t leftValue;          // Wanneer de sensor iets ziet aan de linkerkant, wordt deze waarde verhoogd
+    uint8_t rightValue;         // Wanneer de sensor iets ziet aan de rechterkant, wordt deze waarde verhoogd
+    bool gevonden;              // Geeft aan of de sensor iets heeft gevonden (true) of niet (false)
+    motoren motorsblok;         // Het object motors wordt aangemaakt
+    Zumo32U4ProximitySensors prox;  // Het object prox wordt aangemaakt
 };
