@@ -1,7 +1,6 @@
 #include <BlokDetectie.h>
 #include "Besturing.h"
-motoren motorsblok;                                                             //het object motors wordt gemaakt
-Zumo32U4ProximitySensors prox;                                                  //het object prox wordt gemaakt
+
 BlokDetectie :: BlokDetectie (): leftValue(0), rightValue(0), gevonden(false)   //constructor van blokdetectie
 { 
 
