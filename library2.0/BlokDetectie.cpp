@@ -1,6 +1,6 @@
 #include <BlokDetectie.h>
 #include "Besturing.h"
-motoren motorsblok;                                                         //het object motors wordt gemaakt
+motoren motorsblok;                                                             //het object motors wordt gemaakt
 Zumo32U4ProximitySensors prox;                                                  //het object prox wordt gemaakt
 BlokDetectie :: BlokDetectie (): leftValue(0), rightValue(0), gevonden(false)   //constructor van blokdetectie
 { 
@@ -18,11 +18,14 @@ prox.initFrontSensor();
 
 }
 
-void BlokDetectie :: read()                                                    //hier worden de waardes vanuit de linker en rechter gelezen
+void BlokDetectie :: read()                                                     //hier worden de waardes vanuit de linker en rechter gelezen
 {
   prox.read();
   leftValue = prox.countsFrontWithLeftLeds();
   rightValue = prox.countsFrontWithRightLeds();
+  Serial1.print(leftValue);
+  Serial1.print("\t");
+  Serial1.println(rightValue);
 
 }
 
@@ -36,16 +39,19 @@ void BlokDetectie :: rijden(){                                                  
     if ( (leftValue + rightValue) >= 9 )
 {
     gevonden = true; 
-    motorsblok.setMotorSpeed(200,200);
+    motorsblok.setMotorSpeed(300,300);
 
-
+}
+else {
+    gevonden = false;
+}
     if (leftValue > rightValue) 
 {
-    motorsblok.setMotorSpeed(200, 250);
+    motorsblok.setMotorSpeed(300, 350);
 }
     else if (rightValue > leftValue) 
 {
-    motorsblok.setMotorSpeed(250, 200);
+    motorsblok.setMotorSpeed(350, 300);
 }
-}
+
 }
