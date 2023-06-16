@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class motoren : public Zumo32U4Motors
+class motoren
 {
     public:
         motoren();
