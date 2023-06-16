@@ -1,7 +1,7 @@
 #include <Wire.h>
 #include <Zumo32U4.h>
 
-class Balanceren : public Zumo32U4IMU
+class Balanceren
 {
     public:
     Balanceren();
