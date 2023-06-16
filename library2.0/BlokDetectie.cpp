@@ -1,5 +1,4 @@
 #include <BlokDetectie.h>
-#include "motoren.h"
 
 BlokDetectie :: BlokDetectie (): leftValue(0), rightValue(0), gevonden(false)   //constructor van blokdetectie
 { 
