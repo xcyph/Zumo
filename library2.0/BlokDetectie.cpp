@@ -23,7 +23,7 @@ void BlokDetectie :: read()                                                     
   rightValue = prox.countsFrontWithRightLeds();
 }
 
-void BlokDetectie :: rijden(){                                                  //deze methode wordt weg gegooit 
+void BlokDetectie :: rijden(){                                                  //deze methode zorgt er voor dat de zumo achter het blokje gaat
    
 
     if (gevonden == false) 
