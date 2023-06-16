@@ -4,8 +4,6 @@
 #define NUM_SENSORS 5
 uint16_t drieSensors[NUM_SENSORS];
 
-LijnHerkenning LijnHer;
-
 int groenWaarde = 0;
 int bruinWaarde = 0;
 
